@@ -109,7 +109,9 @@
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") setMenu(false); });
 
   // El logo lleva siempre al inicio de la página (suave, sin dejar #inicio en la URL)
+  // En Inicio el logo sube al principio; en las demás páginas lleva a Inicio.
   $$("[data-scroll-top]").forEach((a) => a.addEventListener("click", (e) => {
+    if (document.body.dataset.page !== "inicio") return;
     e.preventDefault();
     setMenu(false);
     window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });

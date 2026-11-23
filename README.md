@@ -16,8 +16,15 @@ y abre `http://localhost:3000`. (Abrir `index.html` con doble clic no carga bien
 
 | Ruta | Contenido |
 |---|---|
-| `index.html` | Página principal |
+| `index.html` | Inicio: pase de fotos y «Los favoritos de la casa» |
+| `filosofia.html` | Los tres pilares y comunidad |
+| `carta.html` | Carta filtrable |
+| `valoraciones.html` | Valoraciones (enlace a Google) |
+| `donde.html` | Mapa, horarios y contacto |
 | `legal.html` | Aviso legal, privacidad y cookies |
+
+La navbar, el pie y el banner de cookies están repetidos en cada página:
+si cambias uno, cámbialo en las cinco.
 | `css/styles.css` | Estilos (paleta, tipografías Neuton + Plus Jakarta Sans, responsive) |
 | `js/main.js` | Vídeo del hero con scroll, estado abierto/cerrado, carta, cookies |
 | `assets/` | Fotos, logo y vídeo (ver `assets/README.md`) |

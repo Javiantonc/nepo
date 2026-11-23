@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Dónde Estamos · NEPO Café</title>
+    <meta
+      name="description"
+      content="NEPO Café: Avda. Juan XXIII, 19, Pozuelo de Alarcón. Horarios, mapa y contacto."
+    />
+    <meta name="theme-color" content="#F7F4EF" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./favicon-32.png" type="image/png" sizes="32x32" />
+    <link
+      rel="icon"
+      href="./favicon-192.png"
+      type="image/png"
+      sizes="192x192"
+    />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dónde Estamos · NEPO Café" />
+    <meta
+      property="og:description"
+      content="Cafés especiales, tostadas brutales y bollería casera. Un momento analógico en un mundo con prisas."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/cafe-especialidad.jpg" />
+
+    <!-- Tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,300;0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+  </head>
+
+  <body data-page="donde">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <!-- ============================================================
+       1. NAVBAR FLOTANTE
+       ============================================================ -->
+    <header class="nav" data-nav>
+      <div class="nav__inner">
+        <a
+          class="nav__logo"
+          href="./index.html"
+          aria-label="NEPO Café, volver al inicio"
+          data-scroll-top
+        >
+          <img
+            src="./assets/logo-nepo.png"
+            alt="NEPO"
+            width="344"
+            height="64"
+          />
+        </a>
+
+        <nav class="nav__links" aria-label="Principal" id="nav-menu">
+          <a href="./filosofia.html">Filosofía</a>
+          <a href="./carta.html">La Carta</a>
+          <a href="./valoraciones.html">Valoraciones</a>
+          <a href="./donde.html" aria-current="page">Dónde Estamos</a>
+        </nav>
+
+        <div class="nav__actions">
+          <span class="status" data-status aria-live="polite">
+            <span class="status__dot" aria-hidden="true"></span>
+            <span class="status__text" data-status-text>Comprobando…</span>
+          </span>
+          <a class="btn btn--pill btn--dark nav__cta" href="./carta.html"
+            >Ver Carta</a
+          >
+          <button
+            class="nav__toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+            data-nav-toggle
+          >
+            <span class="sr-only">Abrir menú</span>
+            <span class="nav__burger" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <!-- ============================================================
+         6. UBICACIÓN Y HORARIOS
+         ============================================================ -->
+      <section class="section visit" id="donde" aria-labelledby="visit-title">
+        <div class="visit__grid">
+          <div class="visit__info reveal">
+            <p class="eyebrow">Dónde Estamos</p>
+            <h2 class="section__title" id="visit-title">
+              Ven a <em>vernos</em>
+            </h2>
+
+            <address class="visit__address">
+              Avda. Juan XXIII, 19<br />
+              28224 Pozuelo de Alarcón, Madrid
+            </address>
+
+            <table class="hours" aria-label="Horario de apertura">
+              <tbody>
+                <tr data-days="1,2,3,4,5">
+                  <th scope="row">Lunes a viernes</th>
+                  <td>07:30 – 19:30</td>
+                </tr>
+                <tr data-days="6">
+                  <th scope="row">Sábado</th>
+                  <td>08:00 – 19:30</td>
+                </tr>
+                <tr data-days="0">
+                  <th scope="row">Domingo</th>
+                  <td>08:00 – 15:00</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Aviso de temporada: main.js lo muestra solo entre el 15/11 y el 25/12 -->
+            <aside class="seasonal" data-season="11-15:12-25" hidden>
+              <img
+                src="./assets/horario-navidad.jpg"
+                alt="Cartel de NEPO con los horarios de Navidad junto a unas sillas amarillas"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <p class="seasonal__title">Horarios de Navidad</p>
+                <p>
+                  <strong>24 dic</strong> · 07:30 – 15:00<br /><strong
+                    >25 dic</strong
+                  >
+                  · Cerrado
+                </p>
+              </div>
+            </aside>
+
+            <div class="visit__actions">
+              <a
+                class="btn btn--pill btn--dark"
+                target="_blank"
+                rel="noopener"
+                href="https://www.google.com/maps/dir/?api=1&amp;destination=Avda.%20Juan%20XXIII%2C%2019%2C%2028224%20Pozuelo%20de%20Alarc%C3%B3n%2C%20Madrid"
+              >
+                Cómo llegar en Google Maps
+              </a>
+              <a class="btn btn--pill btn--outline" href="mailto:hola@nepo.cafe"
+                >hola@nepo.cafe</a
+              >
+            </div>
+          </div>
+
+          <div class="map reveal">
+            <!-- Mapa con filtro cálido/monocromo. Google Maps instala cookies de
+               terceros, así que solo se carga si el visitante las acepta. -->
+            <iframe
+              class="map__frame"
+              title="Mapa: NEPO Café, Avda. Juan XXIII 19, Pozuelo de Alarcón"
+              data-src="https://www.google.com/maps?q=Avda.+Juan+XXIII+19,+28224+Pozuelo+de+Alarc%C3%B3n,+Madrid&amp;z=16&amp;output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="map__consent" data-map-consent>
+              <p class="map__consent-title">Avda. Juan XXIII, 19</p>
+              <p>
+                El mapa interactivo lo sirve Google Maps, que instala sus
+                propias cookies.
+              </p>
+              <button
+                class="btn btn--pill btn--dark"
+                type="button"
+                data-cookie-accept
+              >
+                Aceptar y ver mapa
+              </button>
+            </div>
+            <div class="map__pin" aria-hidden="true">
+              <span class="map__pin-dot"></span>
+              <span class="map__pin-label">NEPO</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+    <footer class="footer">
+      <div class="footer__top">
+        <p class="footer__logo">NEPO</p>
+        <p class="footer__claim">
+          Cafés especiales, tostadas brutales<br />y bollería casera.
+        </p>
+        <ul class="footer__links">
+          <li><a href="mailto:hola@nepo.cafe">hola@nepo.cafe</a></li>
+          <li>
+            <a
+              href="https://www.instagram.com/nepo.cafe/"
+              target="_blank"
+              rel="noopener"
+              >Instagram @nepo.cafe</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/nepo_mvmt_studio/"
+              target="_blank"
+              rel="noopener"
+              >@nepo_mvmt_studio</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="footer__legal">
+        <p>© <span data-year>2026</span> NEPO Café · Pozuelo Coffee House</p>
+        <nav aria-label="Legal">
+          <a href="./legal.html#cookies">Cookies</a>
+          <button type="button" class="footer__cookie-btn" data-cookie-settings>
+            Configurar cookies
+          </button>
+          <a href="./legal.html#privacidad">Privacidad</a>
+          <a href="./legal.html#aviso-legal">Aviso Legal</a>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- ============================================================
+       BANNER DE COOKIES
+       Solo hay una categoría opcional: Google Maps (terceros).
+       La elección se guarda en el navegador del visitante.
+       ============================================================ -->
+    <div
+      class="cookies"
+      data-cookie-banner
+      role="dialog"
+      aria-modal="false"
+      aria-labelledby="cookies-title"
+      aria-describedby="cookies-text"
+      hidden
+    >
+      <p class="cookies__title" id="cookies-title">Cookies</p>
+      <p class="cookies__text" id="cookies-text">
+        Usamos solo lo imprescindible para que la web funcione. El mapa de
+        «Dónde Estamos» lo carga Google Maps, que instala cookies propias.
+        <a href="./legal.html#cookies">Más información</a>
+      </p>
+      <div class="cookies__actions">
+        <button
+          class="btn btn--pill btn--outline"
+          type="button"
+          data-cookie-reject
+        >
+          Rechazar
+        </button>
+        <button
+          class="btn btn--pill btn--dark"
+          type="button"
+          data-cookie-accept
+        >
+          Aceptar
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/main.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Filosofía · NEPO Café</title>
+    <meta
+      name="description"
+      content="Cafés especiales, Momento NEPO y cultura del café: la filosofía de NEPO Café en Pozuelo de Alarcón."
+    />
+    <meta name="theme-color" content="#F7F4EF" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./favicon-32.png" type="image/png" sizes="32x32" />
+    <link
+      rel="icon"
+      href="./favicon-192.png"
+      type="image/png"
+      sizes="192x192"
+    />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Filosofía · NEPO Café" />
+    <meta
+      property="og:description"
+      content="Cafés especiales, tostadas brutales y bollería casera. Un momento analógico en un mundo con prisas."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/cafe-especialidad.jpg" />
+
+    <!-- Tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,300;0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+  </head>
+
+  <body data-page="filosofia">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <!-- ============================================================
+       1. NAVBAR FLOTANTE
+       ============================================================ -->
+    <header class="nav" data-nav>
+      <div class="nav__inner">
+        <a
+          class="nav__logo"
+          href="./index.html"
+          aria-label="NEPO Café, volver al inicio"
+          data-scroll-top
+        >
+          <img
+            src="./assets/logo-nepo.png"
+            alt="NEPO"
+            width="344"
+            height="64"
+          />
+        </a>
+
+        <nav class="nav__links" aria-label="Principal" id="nav-menu">
+          <a href="./filosofia.html" aria-current="page">Filosofía</a>
+          <a href="./carta.html">La Carta</a>
+          <a href="./valoraciones.html">Valoraciones</a>
+          <a href="./donde.html">Dónde Estamos</a>
+        </nav>
+
+        <div class="nav__actions">
+          <span class="status" data-status aria-live="polite">
+            <span class="status__dot" aria-hidden="true"></span>
+            <span class="status__text" data-status-text>Comprobando…</span>
+          </span>
+          <a class="btn btn--pill btn--dark nav__cta" href="./carta.html"
+            >Ver Carta</a
+          >
+          <button
+            class="nav__toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+            data-nav-toggle
+          >
+            <span class="sr-only">Abrir menú</span>
+            <span class="nav__burger" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <!-- ============================================================
+         3. BENTO GRID — los 3 pilares
+         ============================================================ -->
+      <section
+        class="section pillars"
+        id="filosofia"
+        aria-labelledby="pillars-title"
+      >
+        <header class="section__head reveal">
+          <p class="eyebrow">Filosofía</p>
+          <h2 class="section__title" id="pillars-title">
+            Tres pilares, <em>una taza</em>
+          </h2>
+        </header>
+
+        <div class="bento">
+          <!-- Pilar 1 -->
+          <article class="bento__card bento__card--feature reveal">
+            <figure class="media media--tall" data-label="Café de especialidad">
+              <img
+                src="./assets/cafe-especialidad.jpg"
+                alt="Extracción de espresso: un hilo de café dorado cae del portafiltro de la máquina"
+                style="object-position: 66% 50%"
+                loading="lazy"
+                decoding="async"
+                onerror="this.closest('.media').classList.add('is-fallback')"
+              />
+            </figure>
+            <div class="bento__body">
+              <span class="bento__index">01</span>
+              <h3 class="bento__title">Cafés Especiales</h3>
+              <p>
+                Café de primerísima calidad preparado de forma excelente. Nace
+                destinado a proporcionar momentos de máximo deleite sensorial,
+                cuidando cada detalle en su recogida, proceso de elaboración,
+                tostado y preparación.
+              </p>
+              <blockquote class="bento__quote">
+                “No es espuma. Es textura. Leche tratada con precisión.”
+              </blockquote>
+            </div>
+          </article>
+
+          <!-- Tostadas: tarjeta grande junto al pilar 1 -->
+          <figure
+            class="bento__card bento__card--photo bento__card--toast media reveal"
+            data-label="Tostadas brutales"
+          >
+            <img
+              src="./assets/tostadas-brutales.jpg"
+              alt="Dos tostadas de aguacate con huevo poché y yema líquida"
+              style="object-position: 50% 50%"
+              loading="lazy"
+              decoding="async"
+              onerror="this.closest('.media').classList.add('is-fallback')"
+            />
+            <figcaption class="bento__caption">Tostadas brutales</figcaption>
+          </figure>
+
+          <!-- Pilar 2 -->
+          <article class="bento__card bento__card--sand reveal">
+            <span class="bento__index">02</span>
+            <h3 class="bento__title">Momento NEPO</h3>
+            <p>
+              Con una historia centenaria acompañando al ser humano, el café
+              habilita en nuestro cerebro un nuevo nivel de percepción y
+              sensación. En un mundo de prisas y “ultraprocesado”, invitamos a
+              disfrutar de un momento pausado, un momento “analógico” donde
+              vivir una experiencia única y efímera.
+            </p>
+          </article>
+
+          <!-- Pilar 3 -->
+          <article class="bento__card bento__card--green reveal" id="cultura">
+            <div class="bento__green-text">
+              <span class="bento__index">03</span>
+              <h3 class="bento__title">Cultura del Café</h3>
+              <p>
+                Celebramos la cultura del café y contribuimos a que crezca,
+                aumentando el conocimiento desde su origen hasta la taza y
+                poniendo en valor los procesos de desarrollo ético, justo y
+                sostenible.
+              </p>
+            </div>
+            <figure class="media media--leaf" data-label="Rama de cafeto">
+              <img
+                src="./assets/rama-cafeto.jpg"
+                alt="Rama de cafeto con cerezas de café verdes"
+                style="object-position: 45% 50%"
+                loading="lazy"
+                decoding="async"
+                onerror="this.closest('.media').classList.add('is-fallback')"
+              />
+            </figure>
+          </article>
+
+          <figure
+            class="bento__card bento__card--photo bento__card--photo-b media reveal"
+            data-label="Latte art"
+          >
+            <img
+              src="./assets/latte-art.jpg"
+              alt="Barista vertiendo leche texturizada y dibujando un tulipán de latte art en una taza azul"
+              loading="lazy"
+              decoding="async"
+              onerror="this.closest('.media').classList.add('is-fallback')"
+            />
+            <figcaption class="bento__caption">Latte art</figcaption>
+          </figure>
+
+          <article
+            class="bento__card bento__card--type reveal"
+            aria-hidden="true"
+          >
+            <p class="bento__big">
+              Tiempo.<br /><em>Molienda.</em><br />Precisión.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         5. COMUNIDAD @nepo.cafe
+         ============================================================ -->
+      <section class="section community" aria-labelledby="community-title">
+        <div class="community__grid">
+          <figure
+            class="media community__img community__img--a reveal"
+            data-label="El local"
+          >
+            <img
+              src="./assets/local-nepo.jpg"
+              alt="Fachada blanca de NEPO Café en Pozuelo, con el cartel NEPO y sillas amarillas en la terraza"
+              loading="lazy"
+              decoding="async"
+              onerror="this.closest('.media').classList.add('is-fallback')"
+            />
+          </figure>
+
+          <div class="community__text reveal">
+            <p class="eyebrow">Comunidad · @nepo.cafe</p>
+            <h2 class="community__quote" id="community-title">
+              “Detrás de cada taza hay mucho más de lo que parece.
+              <em>Tiempo, molienda, precisión.</em>”
+            </h2>
+            <p class="community__lead">
+              Somos la cafetería de barrio de Pozuelo: vecinos, madrugadores,
+              equipos de trabajo y amantes del buen café. Y a veces, algo más:
+              sesiones especiales junto a
+              <a
+                href="https://www.instagram.com/nepo_mvmt_studio/"
+                target="_blank"
+                rel="noopener"
+                >@nepo_mvmt_studio</a
+              >, donde el movimiento y el café se encuentran.
+            </p>
+            <a
+              class="btn btn--pill btn--outline"
+              href="https://www.instagram.com/nepo.cafe/"
+              target="_blank"
+              rel="noopener"
+            >
+              Síguenos en Instagram
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                aria-hidden="true"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+              </svg>
+            </a>
+          </div>
+
+          <figure
+            class="media community__img community__img--b reveal"
+            data-label="Tueste"
+          >
+            <img
+              src="./assets/tueste.jpg"
+              alt="Granos de café recién tostados girando en el tambor de enfriado del tostador"
+              loading="lazy"
+              decoding="async"
+              onerror="this.closest('.media').classList.add('is-fallback')"
+            />
+          </figure>
+
+          <figure
+            class="media community__img community__img--c reveal"
+            data-label="En barra"
+          >
+            <img
+              src="./assets/espresso-barra.jpg"
+              alt="Espresso cayendo del portafiltro en una taza amarilla en la barra de NEPO"
+              loading="lazy"
+              decoding="async"
+              onerror="this.closest('.media').classList.add('is-fallback')"
+            />
+          </figure>
+        </div>
+
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee__track">
+            <span>@nepo.cafe</span><span>Pozuelo Coffee House</span
+            ><span>@nepo_mvmt_studio</span><span>Cafés especiales</span
+            ><span>Tostadas brutales</span><span>Bollería casera</span>
+            <span>@nepo.cafe</span><span>Pozuelo Coffee House</span
+            ><span>@nepo_mvmt_studio</span><span>Cafés especiales</span
+            ><span>Tostadas brutales</span><span>Bollería casera</span>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+    <footer class="footer">
+      <div class="footer__top">
+        <p class="footer__logo">NEPO</p>
+        <p class="footer__claim">
+          Cafés especiales, tostadas brutales<br />y bollería casera.
+        </p>
+        <ul class="footer__links">
+          <li><a href="mailto:hola@nepo.cafe">hola@nepo.cafe</a></li>
+          <li>
+            <a
+              href="https://www.instagram.com/nepo.cafe/"
+              target="_blank"
+              rel="noopener"
+              >Instagram @nepo.cafe</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/nepo_mvmt_studio/"
+              target="_blank"
+              rel="noopener"
+              >@nepo_mvmt_studio</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="footer__legal">
+        <p>© <span data-year>2026</span> NEPO Café · Pozuelo Coffee House</p>
+        <nav aria-label="Legal">
+          <a href="./legal.html#cookies">Cookies</a>
+          <button type="button" class="footer__cookie-btn" data-cookie-settings>
+            Configurar cookies
+          </button>
+          <a href="./legal.html#privacidad">Privacidad</a>
+          <a href="./legal.html#aviso-legal">Aviso Legal</a>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- ============================================================
+       BANNER DE COOKIES
+       Solo hay una categoría opcional: Google Maps (terceros).
+       La elección se guarda en el navegador del visitante.
+       ============================================================ -->
+    <div
+      class="cookies"
+      data-cookie-banner
+      role="dialog"
+      aria-modal="false"
+      aria-labelledby="cookies-title"
+      aria-describedby="cookies-text"
+      hidden
+    >
+      <p class="cookies__title" id="cookies-title">Cookies</p>
+      <p class="cookies__text" id="cookies-text">
+        Usamos solo lo imprescindible para que la web funcione. El mapa de
+        «Dónde Estamos» lo carga Google Maps, que instala cookies propias.
+        <a href="./legal.html#cookies">Más información</a>
+      </p>
+      <div class="cookies__actions">
+        <button
+          class="btn btn--pill btn--outline"
+          type="button"
+          data-cookie-reject
+        >
+          Rechazar
+        </button>
+        <button
+          class="btn btn--pill btn--dark"
+          type="button"
+          data-cookie-accept
+        >
+          Aceptar
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/main.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Valoraciones · NEPO Café</title>
+    <meta
+      name="description"
+      content="Valora tu visita a NEPO Café y lee las opiniones de nuestros clientes en Google."
+    />
+    <meta name="theme-color" content="#F7F4EF" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./favicon-32.png" type="image/png" sizes="32x32" />
+    <link
+      rel="icon"
+      href="./favicon-192.png"
+      type="image/png"
+      sizes="192x192"
+    />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Valoraciones · NEPO Café" />
+    <meta
+      property="og:description"
+      content="Cafés especiales, tostadas brutales y bollería casera. Un momento analógico en un mundo con prisas."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/cafe-especialidad.jpg" />
+
+    <!-- Tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,300;0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+  </head>
+
+  <body data-page="valoraciones">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <!-- ============================================================
+       1. NAVBAR FLOTANTE
+       ============================================================ -->
+    <header class="nav" data-nav>
+      <div class="nav__inner">
+        <a
+          class="nav__logo"
+          href="./index.html"
+          aria-label="NEPO Café, volver al inicio"
+          data-scroll-top
+        >
+          <img
+            src="./assets/logo-nepo.png"
+            alt="NEPO"
+            width="344"
+            height="64"
+          />
+        </a>
+
+        <nav class="nav__links" aria-label="Principal" id="nav-menu">
+          <a href="./filosofia.html">Filosofía</a>
+          <a href="./carta.html">La Carta</a>
+          <a href="./valoraciones.html" aria-current="page">Valoraciones</a>
+          <a href="./donde.html">Dónde Estamos</a>
+        </nav>
+
+        <div class="nav__actions">
+          <span class="status" data-status aria-live="polite">
+            <span class="status__dot" aria-hidden="true"></span>
+            <span class="status__text" data-status-text>Comprobando…</span>
+          </span>
+          <a class="btn btn--pill btn--dark nav__cta" href="./carta.html"
+            >Ver Carta</a
+          >
+          <button
+            class="nav__toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+            data-nav-toggle
+          >
+            <span class="sr-only">Abrir menú</span>
+            <span class="nav__burger" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <!-- ============================================================
+         5b. VALORACIONES — reseñas en Google
+         Enlaza a la ficha de Google Maps (cid). El titular del negocio
+         puede cambiar los dos primeros enlaces por el enlace corto «Pedir
+         reseñas» de Google Business Profile, que abre directamente el
+         formulario de valoración.
+         ============================================================ -->
+      <section class="section reviews" id="valoraciones" aria-labelledby="reviews-title">
+        <div class="reviews__card reveal">
+          <p class="eyebrow">Valoraciones</p>
+          <h2 class="section__title" id="reviews-title">¿Qué tal tu <em>momento NEPO</em>?</h2>
+          <p class="reviews__lead">
+            Tu opinión nos ayuda a mejorar cada día. Puntúa tu visita con
+            estrellas y cuéntanos qué te pareció: todas las valoraciones son
+            públicas en Google.
+          </p>
+
+          <a class="reviews__stars" href="https://www.google.com/maps?cid=17366522246686760535" target="_blank" rel="noopener" aria-label="Valorar NEPO Café en Google">
+            <span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span>
+          </a>
+
+          <div class="reviews__actions">
+            <a class="btn btn--pill btn--dark" href="https://www.google.com/maps?cid=17366522246686760535" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.6 1.2 6.6L12 17.3l-5.8 3.2 1.2-6.6-4.9-4.6 6.6-.8z"/></svg>
+              Escribir una valoración
+            </a>
+            <a class="btn btn--pill btn--outline" href="https://www.google.com/maps?cid=17366522246686760535" target="_blank" rel="noopener">
+              Ver todas las valoraciones
+            </a>
+          </div>
+
+          <p class="reviews__steps">
+            Se abre nuestra ficha de Google Maps: pulsa <strong>Reseñas</strong> →
+            <strong>Escribir una reseña</strong>. Necesitas una cuenta de Google.
+          </p>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+    <footer class="footer">
+      <div class="footer__top">
+        <p class="footer__logo">NEPO</p>
+        <p class="footer__claim">
+          Cafés especiales, tostadas brutales<br />y bollería casera.
+        </p>
+        <ul class="footer__links">
+          <li><a href="mailto:hola@nepo.cafe">hola@nepo.cafe</a></li>
+          <li>
+            <a
+              href="https://www.instagram.com/nepo.cafe/"
+              target="_blank"
+              rel="noopener"
+              >Instagram @nepo.cafe</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/nepo_mvmt_studio/"
+              target="_blank"
+              rel="noopener"
+              >@nepo_mvmt_studio</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="footer__legal">
+        <p>© <span data-year>2026</span> NEPO Café · Pozuelo Coffee House</p>
+        <nav aria-label="Legal">
+          <a href="./legal.html#cookies">Cookies</a>
+          <button type="button" class="footer__cookie-btn" data-cookie-settings>
+            Configurar cookies
+          </button>
+          <a href="./legal.html#privacidad">Privacidad</a>
+          <a href="./legal.html#aviso-legal">Aviso Legal</a>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- ============================================================
+       BANNER DE COOKIES
+       Solo hay una categoría opcional: Google Maps (terceros).
+       La elección se guarda en el navegador del visitante.
+       ============================================================ -->
+    <div
+      class="cookies"
+      data-cookie-banner
+      role="dialog"
+      aria-modal="false"
+      aria-labelledby="cookies-title"
+      aria-describedby="cookies-text"
+      hidden
+    >
+      <p class="cookies__title" id="cookies-title">Cookies</p>
+      <p class="cookies__text" id="cookies-text">
+        Usamos solo lo imprescindible para que la web funcione. El mapa de
+        «Dónde Estamos» lo carga Google Maps, que instala cookies propias.
+        <a href="./legal.html#cookies">Más información</a>
+      </p>
+      <div class="cookies__actions">
+        <button
+          class="btn btn--pill btn--outline"
+          type="button"
+          data-cookie-reject
+        >
+          Rechazar
+        </button>
+        <button
+          class="btn btn--pill btn--dark"
+          type="button"
+          data-cookie-accept
+        >
+          Aceptar
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/main.js" defer></script>
+  </body>
+</html>

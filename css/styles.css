@@ -165,6 +165,12 @@ p { margin: 0; }
   transition: transform .45s var(--ease);
 }
 .nav__links a:hover { color: var(--ink); }
+/* Página actual en el menú */
+.nav__links a[aria-current="page"] { color: var(--ink); font-weight: 600; }
+.nav__links a[aria-current="page"]::after { transform: scaleX(1); }
+
+/* En las páginas interiores, la primera sección deja hueco a la navbar fija */
+main > .section:first-child { padding-top: clamp(8rem, 14vw, 10.5rem); }
 .nav__links a:hover::after { transform: scaleX(1); transform-origin: left; }
 
 .nav__actions { display: flex; align-items: center; gap: .75rem; }
@@ -647,7 +653,6 @@ p { margin: 0; }
 @keyframes marquee { to { transform: translateX(-50%); } }
 
 /* ---------- 11b. Valoraciones ---------- */
-.reviews { padding-top: 0; }
 .reviews__card {
   text-align: center;
   background: var(--sand);
