@@ -38,3 +38,17 @@ ffmpeg -i original.mov -vf "scale=1080:-2,fps=30" -an -c:v libx264 -preset slow 
 ```
 
 (Instala ffmpeg con `brew install ffmpeg`.) Intenta que el `.mp4` final pese menos de 8–10 MB.
+
+## Carrusel «Los favoritos de la casa»
+
+Fotos 4:3 (≥ 900×675). Si faltan, se muestra el placeholder con el nombre.
+
+| Archivo | Producto |
+|---|---|
+| `latte-art.jpg` | Flat White (reutilizada) |
+| `tostadas-brutales.jpg` | Tostada de Pavo & Aguacate (reutilizada) |
+| `french-toast.jpg` | French Toast de Brioche |
+| `croissant.jpg` | Croissant de Mantequilla |
+| `matcha-latte.jpg` | Matcha Latte — **pendiente** |
+
+`vertido.mp4` ya no se usa (el hero con scroll se sustituyó por el carrusel).
