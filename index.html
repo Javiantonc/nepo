@@ -35,7 +35,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,300;0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=DM+Sans:opsz,wght@9..40,300..700&display=swap"
       rel="stylesheet"
     />
 
@@ -114,7 +114,6 @@
         <nav class="nav__links" aria-label="Principal" id="nav-menu">
           <a href="./filosofia.html">Filosofía</a>
           <a href="./carta.html">La Carta</a>
-          <a href="./valoraciones.html">Valoraciones</a>
           <a href="./donde.html">Dónde Estamos</a>
         </nav>
 
@@ -123,9 +122,6 @@
             <span class="status__dot" aria-hidden="true"></span>
             <span class="status__text" data-status-text>Comprobando…</span>
           </span>
-          <a class="btn btn--pill btn--dark nav__cta" href="./carta.html"
-            >Ver Carta</a
-          >
           <button
             class="nav__toggle"
             type="button"
@@ -272,7 +268,7 @@
 
             <li class="product">
               <figure class="product__media media" data-label="Matcha Latte">
-                <img src="./assets/matcha-latte.jpg" alt="Matcha latte con leche texturizada" loading="lazy" decoding="async" onerror="this.closest('.media').classList.add('is-fallback')" />
+                <img src="./assets/matcha-latte.jpg" alt="Iced matcha latte en vaso de cristal con hielo" style="object-position: 50% 55%" loading="lazy" decoding="async" onerror="this.closest('.media').classList.add('is-fallback')" />
               </figure>
               <span class="product__badge">Sin café</span>
               <div class="product__row">
@@ -296,6 +292,44 @@
         <p class="claim__text reveal">
           Nueva carta, nuevo horario, <em>cada día mejor.</em>
         </p>
+      </section>
+
+      <!-- ============================================================
+         5b. VALORACIONES — reseñas en Google
+         Enlaza a la ficha de Google Maps (cid). El titular del negocio
+         puede cambiar los dos primeros enlaces por el enlace corto «Pedir
+         reseñas» de Google Business Profile, que abre directamente el
+         formulario de valoración.
+         ============================================================ -->
+      <section class="section reviews" id="valoraciones" aria-labelledby="reviews-title">
+        <div class="reviews__card reveal">
+          <p class="eyebrow">Valoraciones</p>
+          <h2 class="section__title" id="reviews-title">¿Qué tal tu <em>momento NEPO</em>?</h2>
+          <p class="reviews__lead">
+            Tu opinión nos ayuda a mejorar cada día. Puntúa tu visita con
+            estrellas y cuéntanos qué te pareció: todas las valoraciones son
+            públicas en Google.
+          </p>
+
+          <a class="reviews__stars" href="https://www.google.com/maps?cid=17366522246686760535" target="_blank" rel="noopener" aria-label="Valorar NEPO Café en Google">
+            <span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span>
+          </a>
+
+          <div class="reviews__actions">
+            <a class="btn btn--pill btn--dark" href="https://www.google.com/maps?cid=17366522246686760535" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.6 1.2 6.6L12 17.3l-5.8 3.2 1.2-6.6-4.9-4.6 6.6-.8z"/></svg>
+              Escribir una valoración
+            </a>
+            <a class="btn btn--pill btn--outline" href="https://www.google.com/maps?cid=17366522246686760535" target="_blank" rel="noopener">
+              Ver todas las valoraciones
+            </a>
+          </div>
+
+          <p class="reviews__steps">
+            Se abre nuestra ficha de Google Maps: pulsa <strong>Reseñas</strong> →
+            <strong>Escribir una reseña</strong>. Necesitas una cuenta de Google.
+          </p>
+        </div>
       </section>
 
     </main>

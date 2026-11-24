@@ -49,6 +49,6 @@ Fotos 4:3 (≥ 900×675). Si faltan, se muestra el placeholder con el nombre.
 | `tostadas-brutales.jpg` | Tostada de Pavo & Aguacate (reutilizada) |
 | `french-toast.jpg` | French Toast de Brioche |
 | `croissant.jpg` | Croissant de Mantequilla |
-| `matcha-latte.jpg` | Matcha Latte — **pendiente** |
+| `matcha-latte.jpg` | Matcha Latte |
 
 `vertido.mp4` ya no se usa (el hero con scroll se sustituyó por el carrusel).
